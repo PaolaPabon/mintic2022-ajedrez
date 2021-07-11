@@ -1,6 +1,6 @@
 package juego_ajedrez;
 
-public class Alfil {
+public class Alfil extends Ficha {
     // Atributos
     // Metodos
     public Boolean mover() {

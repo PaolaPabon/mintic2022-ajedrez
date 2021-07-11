@@ -1,6 +1,6 @@
 package juego_ajedrez;
 
-public class Rey {
+public class Rey extends Ficha {
     // Atributos
     // Metodos
     public Boolean mover() {

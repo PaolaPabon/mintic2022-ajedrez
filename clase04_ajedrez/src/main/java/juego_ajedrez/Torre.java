@@ -1,6 +1,6 @@
 package juego_ajedrez;
 
-public class Torre {
+public class Torre extends Ficha{
     // Atributos
     // Metodos
     public Boolean mover() {

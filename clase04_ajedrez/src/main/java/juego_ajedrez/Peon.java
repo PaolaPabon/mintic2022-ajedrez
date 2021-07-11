@@ -1,6 +1,6 @@
 package juego_ajedrez;
 
-public class Peon {
+public class Peon extends Ficha {
     // Atributos
     // Metodos
     public Boolean capturar() {

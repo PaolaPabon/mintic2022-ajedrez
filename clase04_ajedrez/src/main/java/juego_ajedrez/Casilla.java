@@ -1,8 +1,10 @@
 package juego_ajedrez;
 
+import java.text.spi.CollatorProvider;
+
 public class Casilla {
     // Atributos
-    private String color;
+    private Color color;
     private Integer columna;
     private Integer fila;
 
