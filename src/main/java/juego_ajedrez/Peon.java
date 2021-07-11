@@ -14,4 +14,8 @@ public class Peon extends Ficha {
     public Boolean mover() {
         return null;
     }
+
+    public Peon(Color color) {
+        super(color);
+    }
 }
