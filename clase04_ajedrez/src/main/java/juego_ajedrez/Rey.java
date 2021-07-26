@@ -7,4 +7,8 @@ public class Rey extends Ficha {
         return null;
     }
 
+    public Rey(Color color) {
+        super(color);
+    }
+
 }

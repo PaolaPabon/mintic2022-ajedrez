@@ -6,4 +6,8 @@ public class Reina extends Ficha {
     public Boolean mover() {
         return null;
     }
+
+    public Reina(Color color) {
+        super(color);
+    }
 }
