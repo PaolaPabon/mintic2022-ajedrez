@@ -21,7 +21,7 @@ public class ProyectosConsultaDao {
         try {
             var query = "SELECT CIUDAD, CLASIFICACION, COUNT(CIUDAD) TOTAL, MIN(Fecha_Inicio) VIEJO, MAX(Fecha_Inicio) RECIENTE"
                     + " FROM PROYECTO P " 
-                    + " WHERE CLASIFICACION IN (?,?)"
+                    + " WHERE CLASIFICACION = (?) OR CLASIFICACION = (?)"
                     + " GROUP BY CIUDAD , CLASIFICACION" 
                     + " ORDER BY CIUDAD , CLASIFICACION";
 
