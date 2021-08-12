@@ -41,6 +41,7 @@ public class ProyectosConsultaVo {
     }
     @Override
     public String toString() {
+        
         return "ProyectosConsultaVo [ciudad=" + ciudad + ", clasificacion=" + clasificacion + ", reciente=" + reciente
                 + ", total=" + total + ", viejo=" + viejo + "]";
     }
