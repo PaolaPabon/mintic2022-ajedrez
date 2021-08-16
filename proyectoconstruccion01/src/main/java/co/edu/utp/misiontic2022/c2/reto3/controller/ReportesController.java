@@ -15,7 +15,7 @@ public class ReportesController {
     private PagadoPorProyectoDao pagadoPorProyectoDao;
     private ProyectoBancoDao proyectoBancoDao;
 
-    // constructores  
+    // constructor  
 
     public ReportesController() {
         this.comprasDeLiderDao = new ComprasDeLiderDao();
@@ -35,6 +35,5 @@ public class ReportesController {
 
     public List<ProyectoBancoVo> listadoProyectoBanco (String banco) throws SQLException{
         return proyectoBancoDao.listarProyectosBancos (banco);
-    };
-    
+    } 
 }

@@ -7,16 +7,13 @@ public class App {
     public static void main(String[] args) {
         
         var reportesView = new ReportesView();
-        //var banco = "Davivienda"; 
-        //reportesView.proyectosFinanciadosPorBanco(banco);
+        var banco = "Davivienda"; 
+        reportesView.proyectosFinanciadosPorBanco(banco);
         
-        var limiteInferior = 50_000d;
-        reportesView.totalPagadoPorProyectosSuperioresALimite(limiteInferior);
+        //var limiteInferior = 50_000d;
+        //reportesView.totalPagadoPorProyectosSuperioresALimite(limiteInferior);
         
         //reportesView.lideresQueMenosGastan();
-
-                
-
-        
+       
     }
 }

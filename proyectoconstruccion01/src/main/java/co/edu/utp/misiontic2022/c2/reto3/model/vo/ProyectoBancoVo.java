@@ -48,7 +48,5 @@ public class ProyectoBancoVo {
     public String toString() {
         return "ProyectoBancoVo [ciudad=" + ciudad + ", clasificacion=" + clasificacion + ", constructora="
                 + constructora + ", estrato=" + estrato + ", id=" + id + ", lider=" + lider + "]";
-    }
-    
-    
+    } 
 }

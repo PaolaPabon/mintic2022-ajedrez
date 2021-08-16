@@ -9,7 +9,7 @@ import co.edu.utp.misiontic2022.c2.reto3.model.vo.ProyectosConsultaVo;
 public class ConsultasController {
     
     private ProyectosConsultaDao proyectosConsultaDao;
-
+    
     public ConsultasController () {
         proyectosConsultaDao = new ProyectosConsultaDao();
     }
