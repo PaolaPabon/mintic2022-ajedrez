@@ -1,8 +1,8 @@
 package co.edu.utp.misiontic2022.c2.reto3.view;
 
 import java.awt.BorderLayout;
-import java.awt.Component;
 import java.sql.SQLException;
+import java.text.DecimalFormat;
 import java.util.List;
 
 import javax.swing.JButton;
@@ -49,7 +49,7 @@ public class FormularioConsulta extends JFrame {
 
         var panel2 = new JPanel();
         panel2.setLayout(new BorderLayout());
-        op1.addTab("Consulta Proyecto Pagados ", panel2);
+        op1.addTab("Consulta Proyectos Pagados ", panel2);
 
         var panel3 = new JPanel();
         panel3.setLayout(new BorderLayout());
@@ -57,7 +57,7 @@ public class FormularioConsulta extends JFrame {
         
         //
         var panelEntrada = new JPanel();
-        panelEntrada.add(new JLabel("banco"));
+        panelEntrada.add(new JLabel("Banco"));
         var textBanco = new JTextField(20);
         panelEntrada.add(textBanco);
        
@@ -232,7 +232,8 @@ public class FormularioConsulta extends JFrame {
                 case 0:
                     return project.getId();
                 case 1:
-                    return project.getValor();
+                DecimalFormat df = new DecimalFormat("$ ###,###.0");
+                return df.format(project.getValor());
                 }
             return null;
         }
@@ -275,7 +276,8 @@ public class FormularioConsulta extends JFrame {
                 case 0:
                     return project.getLider();
                 case 1:
-                    return project.getValor();
+                    DecimalFormat df = new DecimalFormat("$ ###,###.0");
+                    return df.format(project.getValor());
                 }
             return null;
         }
