@@ -45,15 +45,15 @@ public class FormularioConsulta extends JFrame {
 
         var panel1 = new JPanel();
         panel1.setLayout(new BorderLayout());
-        op1.addTab("Consulta Proyectos por Bancos", panel1);
+        op1.addTab("Consulta Proyectos Financiados - Bancos", panel1);
 
         var panel2 = new JPanel();
         panel2.setLayout(new BorderLayout());
-        op1.addTab("Consulta Proyectos Pagados ", panel2);
+        op1.addTab("Listado Total Pagado por Proyectos", panel2);
 
         var panel3 = new JPanel();
         panel3.setLayout(new BorderLayout());
-        op1.addTab("Consulta Compras de Lider", panel3);
+        op1.addTab("Top 10 de los Lideres que menos gastan", panel3);
         
         //
         var panelEntrada = new JPanel();
@@ -72,7 +72,7 @@ public class FormularioConsulta extends JFrame {
 
         //
         var panelEntrada2 = new JPanel();
-        panelEntrada2.add(new JLabel("Limite"));
+        panelEntrada2.add(new JLabel("Superiores a (Limite)"));
         var textlimit = new JTextField(20);
         panelEntrada2.add(textlimit);
        
@@ -89,7 +89,7 @@ public class FormularioConsulta extends JFrame {
         //
         var panelEntrada3 = new JPanel();
              
-        var botonConsulta3 = new JButton("Genera Consulta");
+        var botonConsulta3 = new JButton("Generar Consulta");
         botonConsulta3.addActionListener( e -> consultarComprasDeLider());             
         
         panelEntrada3.add(botonConsulta3);
